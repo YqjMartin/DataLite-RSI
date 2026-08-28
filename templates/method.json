@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1",
+  "id": "replace-with-method-id",
+  "name": "Human-readable RSI method name",
+  "version": "0.1.0",
+  "description": "Describe the recursive improvement mechanism.",
+  "tracks": [
+    "llm"
+  ],
+  "entrypoint": "python -m rsi.methods.replace_with_method",
+  "modifies": [
+    "prompt"
+  ],
+  "feedback_signal": "Describe the feedback used at each iteration.",
+  "stopping_rule": "Describe the stopping condition and budget.",
+  "human_intervention": "none",
+  "license": "NOASSERTION"
+}
+

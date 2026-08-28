@@ -1,0 +1,6 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Lite-RSI dataset
+    url: https://huggingface.co/datasets/lhpku20010120/Lite-RSI
+    about: Browse data files and the Dataset Card on Hugging Face.
+

@@ -1,0 +1,31 @@
+{
+  "schema_version": "0.1",
+  "id": "replace-with-benchmark-id",
+  "name": "Human-readable benchmark name",
+  "version": "0.1.0",
+  "track": "llm",
+  "description": "State what capability this benchmark measures.",
+  "task_types": [
+    "text-generation"
+  ],
+  "dataset": {
+    "registry_id": "replace-with-dataset-id",
+    "revision": "replace-with-hugging-face-commit-sha"
+  },
+  "evaluator": {
+    "entrypoint": "python benchmarks/replace-with-benchmark-id/evaluator.py",
+    "container_image": null
+  },
+  "metrics": [
+    {
+      "name": "primary_score",
+      "higher_is_better": true,
+      "range": [
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "license": "NOASSERTION"
+}
+

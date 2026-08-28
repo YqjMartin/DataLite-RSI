@@ -1,0 +1,33 @@
+name: Propose a dataset
+description: Propose registering a dataset used by a Lite-RSI benchmark.
+title: "[Dataset] "
+body:
+  - type: input
+    id: hf_repo
+    attributes:
+      label: Hugging Face repository
+      placeholder: namespace/dataset-name
+    validations:
+      required: true
+  - type: textarea
+    id: contents
+    attributes:
+      label: Contents and intended use
+      description: Describe modalities, splits, scale, formats, and associated benchmarks.
+    validations:
+      required: true
+  - type: textarea
+    id: provenance
+    attributes:
+      label: Provenance and license
+      description: Describe collection/generation, ownership, license, and terms of use.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Privacy, safety, and limitations
+      description: Disclose PII, consent, harmful content, bias, access restrictions, and known limitations.
+    validations:
+      required: true
+

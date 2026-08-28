@@ -1,0 +1,32 @@
+name: Discuss a result submission
+description: Ask about or pre-register an experimental result submission.
+title: "[Result] "
+body:
+  - type: input
+    id: benchmark
+    attributes:
+      label: Benchmark and version
+      placeholder: benchmark-id 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: model_method
+    attributes:
+      label: Model and RSI method
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Settings and budget
+      description: Include seeds, iterations, sampling settings, hardware, time, and API cost.
+    validations:
+      required: true
+  - type: textarea
+    id: artifacts
+    attributes:
+      label: Reproducibility artifacts
+      description: Link code, data revision, image digest, logs, outputs, and the reproduction command.
+    validations:
+      required: true
+

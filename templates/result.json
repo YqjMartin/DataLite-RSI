@@ -1,0 +1,39 @@
+{
+  "schema_version": "0.1",
+  "submission_id": "replace-with-submission-id",
+  "status": "unverified",
+  "track": "llm",
+  "benchmark": {
+    "id": "replace-with-benchmark-id",
+    "version": "0.1.0"
+  },
+  "model": {
+    "id": "provider/model-name",
+    "revision": "replace-with-model-revision"
+  },
+  "method_id": "replace-with-method-id",
+  "metrics": {
+    "baseline": {
+      "primary_score": 0.0
+    },
+    "final": {
+      "primary_score": 0.0
+    }
+  },
+  "settings": {
+    "seeds": [
+      0
+    ],
+    "iterations": 1,
+    "compute_budget": "Describe hardware, wall time, and/or API cost",
+    "human_intervention": "none"
+  },
+  "reproducibility": {
+    "code_revision": "replace-with-github-commit-sha",
+    "dataset_revision": "replace-with-hugging-face-commit-sha",
+    "container_image": "ghcr.io/haolpku/lite-rsi-eval@sha256:replace-with-digest",
+    "command": "replace-with-complete-command",
+    "artifacts_url": null
+  }
+}
+

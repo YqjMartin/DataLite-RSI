@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/haolpku/Lite-RSI/schemas/dataset.schema.json",
+  "title": "Lite-RSI dataset registry entry",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "description",
+    "huggingface",
+    "modalities",
+    "formats",
+    "splits",
+    "license",
+    "access",
+    "contains_pii",
+    "provenance_url"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "huggingface": {
+      "type": "object",
+      "required": [
+        "repo_id",
+        "revision"
+      ],
+      "properties": {
+        "repo_id": {
+          "type": "string",
+          "pattern": "^[^/]+/[^/]+$"
+        },
+        "revision": {
+          "type": "string"
+        }
+      }
+    },
+    "modalities": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "formats": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "splits": {
+      "type": "object",
+      "minProperties": 1
+    },
+    "license": {
+      "type": "string"
+    },
+    "access": {
+      "enum": [
+        "public",
+        "gated",
+        "private"
+      ]
+    },
+    "contains_pii": {
+      "type": "boolean"
+    },
+    "provenance_url": {
+      "type": "string"
+    }
+  }
+}
+

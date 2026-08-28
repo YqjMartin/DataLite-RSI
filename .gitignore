@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*~
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local datasets, weights, caches, and generated artifacts
+data/
+artifacts/
+outputs/
+checkpoints/
+models/
+wandb/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.tar
+*.tar.gz
+*.zip
+

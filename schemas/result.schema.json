@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/haolpku/Lite-RSI/schemas/result.schema.json",
+  "title": "Lite-RSI result submission",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "submission_id",
+    "status",
+    "track",
+    "benchmark",
+    "model",
+    "method_id",
+    "metrics",
+    "settings",
+    "reproducibility"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "submission_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "status": {
+      "enum": [
+        "unverified",
+        "verified",
+        "rejected"
+      ]
+    },
+    "track": {
+      "enum": [
+        "llm",
+        "multimodal",
+        "generative"
+      ]
+    },
+    "benchmark": {
+      "type": "object",
+      "required": [
+        "id",
+        "version"
+      ]
+    },
+    "model": {
+      "type": "object",
+      "required": [
+        "id",
+        "revision"
+      ]
+    },
+    "method_id": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "object",
+      "required": [
+        "baseline",
+        "final"
+      ]
+    },
+    "settings": {
+      "type": "object",
+      "required": [
+        "seeds",
+        "iterations",
+        "compute_budget",
+        "human_intervention"
+      ]
+    },
+    "reproducibility": {
+      "type": "object",
+      "required": [
+        "code_revision",
+        "dataset_revision",
+        "container_image",
+        "command"
+      ]
+    }
+  }
+}
+

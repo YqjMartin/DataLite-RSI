@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/haolpku/Lite-RSI/schemas/method.schema.json",
+  "title": "Lite-RSI method manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "version",
+    "description",
+    "tracks",
+    "entrypoint",
+    "modifies",
+    "feedback_signal",
+    "stopping_rule",
+    "human_intervention",
+    "license"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tracks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "enum": [
+          "llm",
+          "multimodal",
+          "generative"
+        ]
+      }
+    },
+    "entrypoint": {
+      "type": "string"
+    },
+    "modifies": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "feedback_signal": {
+      "type": "string"
+    },
+    "stopping_rule": {
+      "type": "string"
+    },
+    "human_intervention": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    }
+  }
+}
+

@@ -1,0 +1,33 @@
+name: Propose an RSI method
+description: Propose a new recursive self-improvement method or implementation.
+title: "[RSI Method] "
+body:
+  - type: textarea
+    id: method
+    attributes:
+      label: Method summary
+      description: What changes recursively, and what is the expected improvement mechanism?
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Feedback and acceptance rule
+      description: Define feedback signals, acceptance criteria, stopping conditions, and rollback.
+    validations:
+      required: true
+  - type: textarea
+    id: budget
+    attributes:
+      label: Budget and intervention
+      description: State compute/API budgets and every form of human intervention.
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety and failure modes
+      description: Describe constraints, external services, risks, and known failure modes.
+    validations:
+      required: true
+

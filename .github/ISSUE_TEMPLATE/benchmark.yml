@@ -1,0 +1,43 @@
+name: Propose a benchmark
+description: Propose a new LLM, multimodal, or generative Lite-RSI benchmark.
+title: "[Benchmark] "
+body:
+  - type: dropdown
+    id: track
+    attributes:
+      label: Primary track
+      options:
+        - LLM
+        - Multimodal
+        - Generative
+    validations:
+      required: true
+  - type: textarea
+    id: capability
+    attributes:
+      label: Capability and task
+      description: What capability does the benchmark measure, and why is it relevant to RSI?
+    validations:
+      required: true
+  - type: textarea
+    id: data
+    attributes:
+      label: Data source and license
+      description: Describe provenance, scale, redistribution rights, privacy, and contamination risks.
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluator and metrics
+      description: Define inputs, outputs, metrics, aggregation, and expected runtime requirements.
+    validations:
+      required: true
+  - type: textarea
+    id: rsi
+    attributes:
+      label: RSI comparison design
+      description: Explain the baseline, allowed improvement loop, budget, and leakage controls.
+    validations:
+      required: true
+

@@ -1,0 +1,26 @@
+{
+  "schema_version": "0.1",
+  "id": "replace-with-dataset-id",
+  "name": "Human-readable dataset name",
+  "description": "State what the dataset contains and how it was created.",
+  "huggingface": {
+    "repo_id": "lhpku20010120/Lite-RSI",
+    "revision": "replace-with-hugging-face-commit-sha"
+  },
+  "modalities": [
+    "text"
+  ],
+  "formats": [
+    "parquet"
+  ],
+  "splits": {
+    "test": {
+      "num_examples": 0
+    }
+  },
+  "license": "NOASSERTION",
+  "access": "public",
+  "contains_pii": false,
+  "provenance_url": "https://huggingface.co/datasets/lhpku20010120/Lite-RSI"
+}
+
