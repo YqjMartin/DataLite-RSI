@@ -1,11 +1,13 @@
-# Lite-RSI
+# DataLite-RSI
 
-**Less Is More for Recursive Self-Improvement**
+**Less Is More for Data-Centric Recursive Self-Improvement**
 
-Lite-RSI is an open research project for studying recursive self-improvement
-(RSI) under explicit intervention and compute budgets. The project is designed
-to support comparable experiments across large language models, multimodal
-models, and generative models.
+DataLite-RSI is an open research project for studying the data side of
+recursive self-improvement (RSI) under explicit intervention and compute
+budgets. It focuses on selecting, editing, generating, and reusing small
+amounts of high-value data to improve models efficiently. The project supports
+comparable experiments across large language models, multimodal models, and
+generative models.
 
 > Project status: early-stage infrastructure. Benchmark tasks, reference
 > evaluators, and the first verified results are being prepared.
@@ -21,7 +23,7 @@ models, and generative models.
 ## Contribute
 
 There are four independent contribution routes. You do not need to implement
-the complete Lite-RSI stack to contribute one component.
+the complete DataLite-RSI stack to contribute one component.
 
 | Contribution | What belongs in GitHub | Start here |
 | --- | --- | --- |
@@ -36,12 +38,12 @@ or read the [Chinese contribution guide](docs/CONTRIBUTING_zh.md).
 ## Storage policy
 
 - **GitHub:** source code, manifests, Dockerfiles, tests, documentation, and the
-  project website.
+  project website in [`haolpku/DataLite-RSI`](https://github.com/haolpku/DataLite-RSI).
 - **Hugging Face:** benchmark data and other large ML artifacts. The canonical
-  dataset repository is
+  dataset repository is currently named
   [`lhpku20010120/Lite-RSI`](https://huggingface.co/datasets/lhpku20010120/Lite-RSI).
 - **GHCR:** built Docker/OCI images, for example
-  `ghcr.io/haolpku/lite-rsi-eval:<version>`.
+  `ghcr.io/haolpku/datalite-rsi-eval:<version>`.
 
 Do not commit model weights, dataset archives, Docker image tarballs, generated
 media, API keys, or other large binary artifacts to this repository.
@@ -73,8 +75,8 @@ python -m unittest discover -s tests -v
 The same validation can run without installing Python dependencies locally:
 
 ```bash
-docker build -f docker/validator/Dockerfile -t lite-rsi-validator .
-docker run --rm -v "$PWD:/workspace:ro" lite-rsi-validator /workspace
+docker build -f docker/validator/Dockerfile -t datalite-rsi-validator .
+docker run --rm -v "$PWD:/workspace:ro" datalite-rsi-validator /workspace
 ```
 
 ## Reproducibility contract
@@ -94,5 +96,4 @@ them to the public leaderboard.
 
 ## Citation
 
-Paper and citation information will be added with the first Lite-RSI release.
-
+Paper and citation information will be added with the first DataLite-RSI release.

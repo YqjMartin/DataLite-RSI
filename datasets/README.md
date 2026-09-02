@@ -1,7 +1,7 @@
-# Dataset registry
+# DataLite-RSI dataset registry
 
 This directory contains metadata and immutable references, not large dataset
-files. Canonical Lite-RSI data is hosted at
+files. The current DataLite-RSI dataset repository is still named
 [`lhpku20010120/Lite-RSI`](https://huggingface.co/datasets/lhpku20010120/Lite-RSI).
 
 To register a dataset:
@@ -15,4 +15,3 @@ To register a dataset:
 
 Benchmarks refer to the registry `id`, while result manifests also record the
 exact dataset revision used in that run.
-

@@ -1,4 +1,4 @@
-# Contributing to Lite-RSI
+# Contributing to DataLite-RSI
 
 Thank you for helping build reproducible research on recursive
 self-improvement. Contributions can be small and focused: a new benchmark,
@@ -102,7 +102,7 @@ Start from [`templates/method.json`](templates/method.json). Document:
 - the feedback signal and acceptance rule;
 - stopping conditions and resource budget;
 - whether human intervention is used at any iteration;
-- supported tracks and required external services;
+- supported DataLite-RSI tracks and required external services;
 - safety constraints, rollback behavior, and known failure modes.
 
 Keep model-specific adapters separate from the core algorithm when possible.
@@ -163,4 +163,3 @@ requests run the repository checks automatically.
 
 Maintainers may request evaluation reruns, licensing clarification, schema
 changes, or independent verification before accepting or ranking a result.
-

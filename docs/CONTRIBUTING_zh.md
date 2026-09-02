@@ -1,6 +1,6 @@
-# Lite-RSI 中文贡献指南
+# DataLite-RSI 中文贡献指南
 
-Lite-RSI 接受四类可以彼此独立提交的贡献：Benchmark、Dataset、实验结果和
+DataLite-RSI 接受四类可以彼此独立提交的贡献：Benchmark、Dataset、实验结果和
 RSI 方法代码。完整规则以仓库根目录的
 [`CONTRIBUTING.md`](../CONTRIBUTING.md) 为准。
 
@@ -68,4 +68,3 @@ python -m unittest discover -s tests -v
 
 目录名和 manifest 中的 `id` 必须一致，统一使用小写 `kebab-case`。一次 PR
 尽量只解决一种主要贡献，方便科学审查和独立验证。
-

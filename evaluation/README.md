@@ -1,6 +1,6 @@
-# Evaluation contract
+# DataLite-RSI evaluation contract
 
-Lite-RSI evaluators should expose a deterministic, scriptable entry point. A
+DataLite-RSI evaluators should expose a deterministic, scriptable entry point. A
 track-specific implementation may add fields, but the evaluation record should
 always identify:
 
@@ -18,4 +18,3 @@ practical. This allows independent verification from saved predictions without
 requiring access to the original model or API.
 
 The initial cross-track evaluator API will be added with the first benchmark.
-

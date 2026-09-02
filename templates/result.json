@@ -31,9 +31,8 @@
   "reproducibility": {
     "code_revision": "replace-with-github-commit-sha",
     "dataset_revision": "replace-with-hugging-face-commit-sha",
-    "container_image": "ghcr.io/haolpku/lite-rsi-eval@sha256:replace-with-digest",
+    "container_image": "ghcr.io/haolpku/datalite-rsi-eval@sha256:replace-with-digest",
     "command": "replace-with-complete-command",
     "artifacts_url": null
   }
 }
-
